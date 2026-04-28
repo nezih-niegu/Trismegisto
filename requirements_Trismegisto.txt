@@ -1,0 +1,7 @@
+TotalSegmentator
+SimpleITK
+numpy
+opencv-python
+pydicom
+scikit-image
+pandas
