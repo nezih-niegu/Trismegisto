@@ -1,0 +1,29 @@
+# ============================================================
+# Python 3.9 Environment — Pyradiomics Pipeline
+# ============================================================
+# Install with:
+#   pip install -r environments/requirements_py39.txt
+#
+# NOTE: Install in this exact order to avoid dependency conflicts.
+# pyradiomics has fragile numpy/SimpleITK constraints.
+# ============================================================
+
+pydicom
+ipykernel
+pyradiomics
+
+SimpleITK
+
+# OpenCV — pinned for pyradiomics compatibility
+opencv-python==4.9.0.80
+
+# numpy — must stay below 2.0 for pyradiomics; pin to 1.26.4 for GDCM/pylibjpeg
+numpy==1.26.4
+
+# DICOM codec support
+GDCM
+pylibjpeg
+pylibjpeg-libjpeg
+
+# Data handling — pinned for compatibility
+pandas==2.2.1
